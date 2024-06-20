@@ -4,7 +4,7 @@ import java.util.HashSet;
 public class panagramCheck {
     public static boolean check_Panagram(String str){
 
-        HashSet<Character> set = new HashSet<Character>();
+        HashSet<Character> set = new HashSet<>();
         char ch = 'a';
 
         while(ch<='z'){
@@ -18,16 +18,10 @@ public class panagramCheck {
             if(set.contains(ch)){
                  set.remove(ch);
             }
-            else{
-                continue;
-            }
         }
 
-        if(set.isEmpty()){
-            return true;
-        }
 
-        return false;
+        return (set.isEmpty());
     }
     public static void main(String[] args) {
         String input = new String("Bawds jog, flick quartz, vex nymph");
