@@ -2,7 +2,7 @@ import java.util.Stack;
 import java.util.HashSet;
 public class RemoveDuplicates {
 
-   public static String removeDups(String str) {
+    public static String removeDups(String str) {
 
         HashSet<Character> set = new HashSet<Character>();
         Stack<Character> stack = new Stack<Character>();
@@ -40,9 +40,9 @@ public class RemoveDuplicates {
     }
     public static void main(String[] args) {
 
-       String str = "zvvo";
+        String str = "zvvo";
 
-       String res = removeDups(str);
+        String res = removeDups(str);
 
         System.out.println("Resultant String is: " + res);
 
